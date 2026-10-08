@@ -1,0 +1,24 @@
+# NexaCommerce repository-wide ignore rules
+# This file applies across all apps/ and services/ in the monorepo.
+# App/service-specific rules may live in their own nested .gitignore,
+# but shared rules belong here to avoid duplication.
+
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+dist/
+build/
+
+# Test coverage
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example

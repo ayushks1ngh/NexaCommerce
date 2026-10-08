@@ -1,0 +1,26 @@
+# apps/web (Next.js) specific ignore rules.
+# Repository-wide rules (node_modules, .next, build, coverage, logs, .env*)
+# live in the root /.gitignore. Keep only frontend-specific rules here.
+
+# Alternative package managers (we use npm, but ignore others' artifacts)
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js static export output
+/out/
+
+# misc OS / certs
+.DS_Store
+*.pem
+
+# vercel
+.vercel
+
+# typescript build info / generated types
+*.tsbuildinfo
+next-env.d.ts
